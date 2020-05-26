@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Desafio do Módulo 1</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="input-field col s12">
+        <h1 class="center-align">Pesquisa de usuários</h1>
+      </div>
+    </div>
+    <div class="row">
+      <form>
+        <div class="row">
+          <div class="input-field col s9 m9 l11">
+            <input id="searchInput" type="text" class="validate" />
+            <label for="search">Busca</label>
+          </div>
+          <div class="input-field col s1">
+            <a id="searchBtn" class="waves-effect waves-light btn disabled"
+              >button</a
+            >
+          </div>
+        </div>
+      </form>
+      <div class="row">
+        <div class="col s12 m6 l6">
+          <div class="center-align resultbox">
+            <h3 id="userListTitle"></h3>
+            <div id="tabUsers" class="center-align"></div>
+          </div>
+        </div>
+        <div class="col s12 m6 l6">
+          <div class="center-align resultbox">
+            <h3 id="statisticsTitle"></h3>
+            <div id="tabStatistics"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
